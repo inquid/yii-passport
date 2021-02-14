@@ -1,11 +1,6 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/inquid/php-library-template)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/inquid/yii-passport)
 
-# inquid-library-template
-
-[![Integrate](https://github.com/inquid/php-library-template/workflows/Integrate/badge.svg)](https://github.com/inquid/php-library-template/actions)
-[![Prune](https://github.com/inquid/php-library-template/workflows/Prune/badge.svg)](https://github.com/inquid/php-library-template/actions)
-[![Release](https://github.com/inquid/php-library-template/workflows/Release/badge.svg)](https://github.com/inquid/php-library-template/actions)
-[![Renew](https://github.com/inquid/php-library-template/workflows/Renew/badge.svg)](https://github.com/inquid/php-library-template/actions)
+# Yii Passport
 
 [![Code Coverage](https://codecov.io/gh/inquid/php-library-template/branch/main/graph/badge.svg)](https://codecov.io/gh/inquid/php-library-template)
 [![Type Coverage](https://shepherd.dev/github/inquid/php-library-template/coverage.svg)](https://shepherd.dev/github/inquid/php-library-template)
@@ -20,7 +15,7 @@
 Run
 
 ```sh
-$ composer require inquid/php-library-template
+$ composer require inquid/yii-passport
 ```
 
 ## Usage
