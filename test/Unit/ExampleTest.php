@@ -8,19 +8,19 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE.md file that was distributed with this source code.
  *
- * @see https://github.com/inquid/php-library-template
+ * @see https://github.com/inquid/yii-passport
  */
 
-namespace Inquid\Library\Test\Unit;
+namespace Inquid\YiiPassport\Test\Unit;
 
 use Ergebnis\Test\Util;
-use Inquid\Library\Example;
+use Inquid\YiiPassport\Example;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Inquid\Library\Example
+ * @covers \Inquid\YiiPassport\Example
  */
 final class ExampleTest extends Framework\TestCase
 {

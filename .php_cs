@@ -8,7 +8,7 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE.md file that was distributed with this source code.
  *
- * @see https://github.com/inquid/php-library-template
+ * @see https://github.com/inquid/yii-passport
  */
 
 use Ergebnis\License;
@@ -21,7 +21,7 @@ $license = License\Type\MIT::markdown(
         new \DateTimeZone('UTC')
     ),
     License\Holder::fromString('Inquid'),
-    License\Url::fromString('https://github.com/inquid/php-library-template')
+    License\Url::fromString('https://github.com/inquid/yii-passport')
 );
 
 $license->save();
