@@ -1,8 +1,8 @@
 {
-  "name": "inquid/php-library-template",
+  "name": "inquid/yii-passport",
   "type": "library",
-  "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
-  "homepage": "https://github.com/inquid/php-library-template",
+  "description": "Yii passport like package.",
+  "homepage": "https://github.com/inquid/yii-passport",
   "license": "MIT",
   "authors": [
     {
@@ -52,16 +52,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Inquid\\Library\\": "src/"
+      "Inquid\\YiiPassport\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Inquid\\Library\\Test\\": "test/"
+      "Inquid\\YiiPassport\\Test\\": "test/"
     }
   },
   "support": {
-    "issues": "https://github.com/inquid/php-library-template/issues",
-    "source": "https://github.com/inquid/php-library-template"
+    "issues": "https://github.com/inquid/yii-passport/issues",
+    "source": "https://github.com/inquid/yii-passport"
   }
 }
