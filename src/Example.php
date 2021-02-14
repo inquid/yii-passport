@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/inquid/php-library-template
  */
 
-namespace Inquid\Library;
+namespace Inquid\YiiPassport;
 
 final class Example
 {
