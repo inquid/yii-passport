@@ -20,6 +20,9 @@
   ],
   "require": {
     "php": "^7.3 || ^8.0",
+    "fakerphp/faker": "^1.13",
+    "phpseclib/phpseclib": "^3.0",
+    "sizeg/yii2-jwt": "^2.0",
     "yiisoft/yii2": "~2.0.0"
   },
   "require-dev": {
@@ -64,5 +67,11 @@
   "support": {
     "issues": "https://github.com/inquid/yii-passport/issues",
     "source": "https://github.com/inquid/yii-passport"
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
 }
