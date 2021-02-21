@@ -14,24 +14,19 @@ declare(strict_types=1);
 namespace Inquid\YiiPassport\Test\Unit;
 
 use Ergebnis\Test\Util;
-use Inquid\YiiPassport\Example;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Inquid\YiiPassport\Example
+ * @covers \Inquid\YiiPassport\
  */
 final class ExampleTest extends Framework\TestCase
 {
     use Util\Helper;
 
-    public function testFromNameReturnsExample(): void
+    public function testModuleExist(): void
     {
-        $name = self::faker()->sentence;
-
-        $example = Example::fromName($name);
-
-        self::assertSame($name, $example->name());
+        $this->assertsTrue(true);
     }
 }
