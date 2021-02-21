@@ -2,7 +2,6 @@
 
 namespace Inquid\YiiPassport\models;
 
-use mootensai\relation\RelationTrait;
 use yii\db\ActiveQuery;
 use yii\db\ActiveRecord;
 
@@ -18,8 +17,6 @@ use yii\db\ActiveRecord;
  */
 class OauthRefreshTokens extends ActiveRecord
 {
-    use RelationTrait;
-
     /**
      * This function helps \mootensai\relation\RelationTrait runs faster
      * @return array relation names of this model

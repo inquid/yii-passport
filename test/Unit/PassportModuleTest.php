@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Inquid\YiiPassport\Test\Unit;
 
+use Inquid\YiiPassport\passport;
 use Ergebnis\Test\Util;
 use PHPUnit\Framework;
 
@@ -21,12 +22,12 @@ use PHPUnit\Framework;
  *
  * @covers \Inquid\YiiPassport\
  */
-final class ExampleTest extends Framework\TestCase
+final class PassportModuleTest extends Framework\TestCase
 {
     use Util\Helper;
 
     public function testModuleExist(): void
     {
-        $this->assertsTrue(true);
+        $this->assertTrue(true);
     }
 }
