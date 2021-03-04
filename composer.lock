@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ae7b8d2e02837e8f2be42a3b49bc82a",
+    "content-hash": "01897daf60e32213ff2f0f47a1467a21",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -601,16 +601,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.40",
+            "version": "2.0.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "debb520c1d72a2c97c09d70a2a2a4f600ef3958e"
+                "reference": "0bb56fc24f7b07841095d2ba90fa8ad0c2828601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/debb520c1d72a2c97c09d70a2a2a4f600ef3958e",
-                "reference": "debb520c1d72a2c97c09d70a2a2a4f600ef3958e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/0bb56fc24f7b07841095d2ba90fa8ad0c2828601",
+                "reference": "0bb56fc24f7b07841095d2ba90fa8ad0c2828601",
                 "shasum": ""
             },
             "require": {
@@ -718,7 +718,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-23T15:44:43+00:00"
+            "time": "2021-03-03T21:51:35+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
