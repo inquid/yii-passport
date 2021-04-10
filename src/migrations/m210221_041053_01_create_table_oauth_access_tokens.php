@@ -1,5 +1,7 @@
 <?php
 
+namespace Inquid\YiiPassport\migrations;
+
 use yii\db\Migration;
 
 class m210221_041053_01_create_table_oauth_access_tokens extends Migration

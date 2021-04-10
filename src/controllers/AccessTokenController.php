@@ -57,12 +57,12 @@ class AccessTokenController extends Controller
      */
     public function actionToken(): string {
         $request = Yii::$app->request;
-        $data = json_decode($request->getRawBody(), true)['data']['attributes'];
+        $data = json_decode($request->getRawBody(), true);
 
         $client = OauthClients::find()
             ->where([
                 'id' => $data['client_id'],
-                'secret' => $data['secret'],
+                'secret' => $data['client_secret'],
             ])
             ->select(['id'])
             ->one();
