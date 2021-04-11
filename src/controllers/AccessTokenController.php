@@ -136,7 +136,7 @@ class AccessTokenController extends Controller
             $token = $this->loadToken($matches[1]);
 
             if ($token === null) {
-                return null;
+                return false;
             }
 
             $client_id = $token->getClaim('client_id');
@@ -144,7 +144,7 @@ class AccessTokenController extends Controller
             return $client_id === $client->id;
         }
 
-        return null;
+        return false;
     }
 
     /**
