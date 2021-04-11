@@ -24,8 +24,8 @@ class m210221_041053_03_create_table_oauth_clients extends Migration
                 'personal_access_client' => $this->boolean()->notNull(),
                 'password_client' => $this->boolean()->notNull(),
                 'revoked' => $this->boolean()->notNull(),
-                'created_at' => $this->timestamp(),
-                'updated_at' => $this->timestamp(),
+                'created_at' => $this->dateTime(),
+                'updated_at' => $this->dateTime(),
             ],
             $tableOptions
         );

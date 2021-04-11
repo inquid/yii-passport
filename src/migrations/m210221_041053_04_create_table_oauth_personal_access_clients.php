@@ -18,8 +18,8 @@ class m210221_041053_04_create_table_oauth_personal_access_clients extends Migra
             [
                 'id' => $this->primaryKey(10)->unsigned(),
                 'client_id' => $this->integer(10)->unsigned()->notNull(),
-                'created_at' => $this->timestamp(),
-                'updated_at' => $this->timestamp(),
+                'created_at' => $this->dateTime(),
+                'updated_at' => $this->dateTime(),
             ],
             $tableOptions
         );

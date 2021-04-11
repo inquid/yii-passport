@@ -22,8 +22,8 @@ class m210221_041053_01_create_table_oauth_access_tokens extends Migration
                 'name' => $this->string(),
                 'scopes' => $this->text(),
                 'revoked' => $this->boolean()->notNull(),
-                'created_at' => $this->timestamp(),
-                'updated_at' => $this->timestamp(),
+                'created_at' => $this->dateTime(),
+                'updated_at' => $this->dateTime(),
                 'expires_at' => $this->dateTime(),
             ],
             $tableOptions
