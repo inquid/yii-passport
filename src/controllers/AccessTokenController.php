@@ -17,7 +17,7 @@ use yii\web\Request;
 use yii\web\Response;
 
 /**
- *
+ * Controller to retrieve the tokens.
  */
 class AccessTokenController extends Controller
 {
@@ -106,7 +106,10 @@ class AccessTokenController extends Controller
             throw new Exception('Error processing your request, please check your credentials');
         }
 
-        if ($data['grant_type'] !== 'client_credentials' && $this->authenticateWithClientRequest($request, $client)) {
+        if (
+            $data['grant_type'] !== 'client_credentials' &&
+            !$this->authenticateWithClientRequest($request, $client)
+        ) {
             throw new Exception('Invalid Client Request');
         }
 
@@ -117,7 +120,7 @@ class AccessTokenController extends Controller
         ];
 
         if ($data['grant_type'] === 'password') {
-            $response[] = ['refresh_token' => uniqid()];
+            $response['refresh_token'] = uniqid();
         }
 
         return $response;
