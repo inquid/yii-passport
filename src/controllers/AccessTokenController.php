@@ -172,7 +172,13 @@ class AccessTokenController extends Controller
 
         $builder->withClaim('client_id', $client->id);
         if ($data['grant_type'] === 'password') {
-            $builder->withClaim('user_id', $this->authenticateUser($data)->{$this->userAuthId});
+            $user = $this->authenticateUser($data)->{$this->userAuthId};
+
+            if ($user == false) {
+                throw new Exception('Wrong credentials, please verify them.');
+            }
+
+            $builder->withClaim('user_id', $user);
         }
 
         return $builder->getToken($signer, $key);
