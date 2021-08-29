@@ -13,6 +13,7 @@ use yii\di\Instance;
 use yii\filters\VerbFilter;
 use yii\rest\Controller;
 use yii\web\ForbiddenHttpException;
+use yii\web\HttpException;
 use yii\web\Request;
 use yii\web\Response;
 
@@ -172,13 +173,13 @@ class AccessTokenController extends Controller
 
         $builder->withClaim('client_id', $client->id);
         if ($data['grant_type'] === 'password') {
-            $user = $this->authenticateUser($data)->{$this->userAuthId};
+            $user = $this->authenticateUser($data);
 
             if ($user == false) {
-                throw new Exception('Wrong credentials, please verify them.');
+                throw new HttpException(401, 'Wrong credentials, please verify them.');
             }
 
-            $builder->withClaim('user_id', $user);
+            $builder->withClaim('user_id', $user->{$this->userAuthId});
         }
 
         return $builder->getToken($signer, $key);
