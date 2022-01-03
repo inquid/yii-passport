@@ -23,7 +23,7 @@
     "fakerphp/faker": "^1.16",
     "phpseclib/phpseclib": "^3.0",
     "sizeg/yii2-jwt": "^2.0",
-    "yiisoft/yii2": "~2.0.43",
+    "yiisoft/yii2": "~2.0.44",
     "ext-json": "*"
   },
   "require-dev": {
